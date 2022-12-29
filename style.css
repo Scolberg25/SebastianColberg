@@ -1,0 +1,234 @@
+:root {
+    --navBarColor: #282a35;
+    --navBarHover: #000000;
+    --navBarActive: #04aa6d;
+    --text: #FFFFFF;
+    --background: #121212;
+}
+
+/* Main */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Verdana;
+    padding: 0;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body.fadein {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+#bodyTextLMargin {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 13vh;
+    margin-right: 13vh;
+}
+
+/* navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--navBarColor);
+}
+
+li {
+    float: left;
+    border-left: 1px solid var(--navBarColor);
+    border-right: 1px solid var(--navBarColor);
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+li a:hover {
+    background-color: var(--navBarHover);
+}
+
+.active {
+    background-color: var(--navBarActive);
+}
+
+/* Project Boxes */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.project-boxes {
+    height: 10vh;
+    width: 80%;
+    border: 4px white solid;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    transition: opacity 500ms ease;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.projects>.project-boxes:hover,
+.projects>.project-boxes:focus {
+    opacity: 0.3;
+}
+
+.project-boxes>a>p {
+    font-size: 3vh;
+}
+
+/* Running */
+.pr {
+    display: inline;
+    text-align: center;
+}
+
+.prText {
+    size: 3vh;
+}
+
+/* 404 Page */
+.fourPage {
+    text-align: center;
+}
+
+/* Text Styling */
+#largeTitle {
+    font-size: 60px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#bodyText {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+#noDot {
+    list-style: none;
+}
+
+/* Scroll Bar Width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Scroll Bar Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Scroll Bar Handle */
+::-webkit-scrollbar-thumb {
+    background: #48be89;
+}
+
+/* Nav Boxes */
+#browse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 40%;
+    width: 20%;
+    margin: 2rem 1rem;
+    gap: 3%;
+}
+
+#browse>.browse-option {
+    background-color: rgba(255 255 255 / 2%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0rem;
+    border: 1px solid rgba(255 255 255 / 10%);
+    outline: none;
+    border-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#browse>.browse-option:hover>.browse-option-background,
+#browse>.browse-option:focus>.browse-option-background {
+    opacity: 0.8;
+}
+
+#browse>.browse-option>.browse-option-background {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    transition: opacity 500ms ease;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+#browse>.browse-option:nth-child(1)>.browse-option-background {
+    background-image: url("https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+
+#browse>.browse-option:nth-child(2)>.browse-option-background {
+    background-image: url("images/cameranav.png");
+}
+
+#browse>.browse-option:nth-child(3)>.browse-option-background {
+    background-image: url("https://images.unsplash.com/photo-1625805866449-3589fe3f71a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse>.browse-option:nth-child(4)>.browse-option-background {
+    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+#browse>.browse-option>i,
+#browse>.browse-option>.label {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#browse>.browse-option>i {
+    font-size: 2rem;
+}
+
+#browse>.browse-option>.label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
