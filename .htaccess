@@ -1,8 +1,8 @@
-ErrorDocument 403 https://scolberg.netlify.com/403
-ErrorDocument 404 https://scolberg.netlify.com/404
-ErrorDocument 500 https://scolberg.netlify.com/500
+ErrorDocument 403 https://scolberg.netlify.com/error/403
+ErrorDocument 404 https://scolberg.netlify.com/error/404
+ErrorDocument 500 https://scolberg.netlify.com/error/500
 
-DirectoryIndex home.html
+DirectoryIndex start.html
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 RewriteEngine On

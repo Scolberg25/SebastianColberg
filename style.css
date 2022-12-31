@@ -128,6 +128,19 @@ li a:hover {
     size: 3vh;
 }
 
+/* About Me Page */
+.row {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.row img {
+    width: 50px;
+    padding: 1.5vw;
+    flex: auto;
+}
+
 /* 404 Page */
 .fourPage {
     text-align: center;
