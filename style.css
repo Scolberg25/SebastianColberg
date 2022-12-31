@@ -135,10 +135,12 @@ li a:hover {
     padding: 20px;
 }
 
-.row img {
+.row img, svg {
     width: 50px;
     padding: 1.5vw;
     flex: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 /* 404 Page */
