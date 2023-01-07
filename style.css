@@ -293,7 +293,7 @@ a {
     padding: 20px;
 }
 
-.row img, svg {
+.row #skillsImage {
     width: 50px;
     padding: 1.5vw;
     flex: auto;
