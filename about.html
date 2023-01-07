@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="tab.png">
 </head>
 
-<body class="fadein" onload="document.body.style.opacity='1'">
+<body class="fadein" onload="document.body.style.opacity='1'" style="overflow:hidden;">
     <header>
         <nav>
             <ul>
@@ -26,32 +26,50 @@
     <script src="script.js">
     </script>
     <br>
-    <center>
-        <p id="bodyTextLMargin">Hi, I’m Sebastian! I’m from Cambridge, Massachusetts, and I am the creator of this website. I am currently a student at Belmont Day School (In Belmont MA) in the 8th grade. Learn more about me in the <a href="life" style="color: blue;">My Life</a> section.</p>
-        <h2 style="font-size: 50px;">Skills:</h2>
-    </center>
-    <div class="row">
-        <img id="skillsImage"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2017%2F07%2FHTML5_badge.png&amp;f=1&amp;nofb=1" title="HTML">
-        <img id="skillsImage"
-            src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" title="CSS">
-        <img id="skillsImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/640px-Unofficial_JavaScript_logo_2.svg.png" title="Javascript">
-        <img id="skillsImage"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F10%2FPython_logo_icon.png&amp;f=1&amp;nofb=1" title="Python">
-        <img id="skillsImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/640px-PHP-logo.svg.png" title="PHP">
-        <img id="skillsImage"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplatform-user-uploads.s3.amazonaws.com%2Fblog%2Fcategory%2Flogo%2F60%2Fsql.png&amp;f=1&amp;nofb=1" title="My SQL">
-        <img id="skillsImage"
-            src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" title="Bootstrap">
-        <img id="skillsImage"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" title="Node JS">
-        <img id="skillsImage" src="https://discord.js.org/android-chrome-192x192.png" title="Discord JS">
-        <img id="skillsImage"
-            src="https://imgs.search.brave.com/7PHcVXjfaNELt1KGJE92CFoDVMqf5Rd8GvpMas5Q-Wo/rs:fit:300:283:1/g:ce/aHR0cDovL2xoMy5n/b29nbGV1c2VyY29u/dGVudC5jb20vLTE5/LXBFYTJXWWtBL1R1/NE1sc21CRDJJL0FB/QUFBQUFBQTFFLzNW/OUxKb1FnVFNBL3cx/MjAwLWg2MzAtcC1r/LW5vLW51L2phdmFs/b2dvLmpwZw" title="Java">
+    <div id="text">
+        <div class="line">
+            <p class="word">Sebastian</p>
+            <p class="word">Colberg</p>
         </div>
-    </div>
-</body>
+        <div class="line">
+            <p class="word">Photographer</p>
+            <p class="word">&</p>
+        </div>
+    
+        <div class="line">
+            <p class="word">Web Developer</p>
+        </div>
+    
+        <div class="line">
+            <a href="https://github.com/Scolberg25" target="blank" id="github" class="fancy">
+                <span class="outer">➜</span>
+                <span class="outer">G</span>
+                <span class="outer">i</span>
+                <span class="outer">t</span>
+                <span class="outer">h</span>
+                <span class="outer">u</span>
+                <span class="outer">b</span>
+            </a>
+            <a href="mailto: scolberg@proton.me" target="blank" id="email" class="fancy">
+                <span class="outer">➜</span>
+                <span class="outer">E</span>
+                <span class="outer">m</span>
+                <span class="outer">a</span>
+                <span class="outer">i</span>
+                <span class="outer">l</span>
+            </a>
+            <a href="https://www.instagram.com/sebastian_colberg_photography/?theme=dark" target="blank" id="insta" class="fancy">
+                <span class="outer">➜</span>
+                <span class="outer">I</span>
+                <span class="outer">n</span>
+                <span class="outer">s</span>
+                <span class="outer">t</span>
+                <span class="outer">a</span>
+            </a>
+        </div>
+        <br>
 
+    <button id="arrow" onclick="arrow()">↓</button>
+    <div class="bottom">Powered by <a href="https://netlify.app" target="blank">Netlify</a> and <a href="https://getbootstrap.com" target="blank">Vue JS</a></div>
+</body>
 </html>

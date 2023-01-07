@@ -4,6 +4,9 @@
     --navBarActive: #04aa6d;
     --text: #FFFFFF;
     --background: #121212;
+    --blue: rgb(41, 121, 255);
+    --green: rgb(42, 252, 152);
+    --purple: rgb(66, 33, 99);
 }
 
 /* Main */
@@ -129,6 +132,161 @@ li a:hover {
 }
 
 /* About Me Page */
+#text {
+    margin: 0rem;
+    overflow: hidden;
+    display: grid;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.word, .outer {
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 8rem);
+    font-family: "Rubik", sans-serif;
+    margin: 0rem;
+    text-transform: uppercase;
+    transition: opacity 250ms ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+}
+
+.fancy span {
+    display: inline-block;
+}
+
+.fancy>.outer {
+    transition: transform 350ms ease;
+}
+
+.fancy:hover>.outer {
+    transition-duration: 800ms;
+}
+
+/* Github */
+#github:hover>.outer:nth-child(1) {
+    transform: translate(-10%, -50%) rotate(-10deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+    color: var(--blue);
+}
+
+#github:hover>.outer:nth-child(7) {
+    transform: translate(0%, -40%) rotate(-5deg);
+    color: var(--blue);
+}
+
+/* email */
+#email:hover>.outer:nth-child(1) {
+    transform: translate(-80%, 60%) rotate(8deg);
+    color: var(--green);
+}
+
+#email:hover>.outer:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+    color: var(--green);
+}
+
+#email:hover>.outer:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+    color: var(--green);
+}
+
+#email:hover>.outer:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+    color: var(--green);
+}
+
+#email:hover>.outer:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+    color: var(--green);
+}
+
+#email:hover>.outer:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+    color: var(--green);
+}
+
+/* Insta */
+#insta:hover>.outer:nth-child(1) {
+    transform: translate(-70%, 50%) rotate(-8deg);
+    color: var(--purple);
+}
+
+#insta:hover>.outer:nth-child(2) {
+    transform: translate(-40%, 20%) rotate(4deg);
+    color: var(--purple);
+}
+
+#insta:hover>.outer:nth-child(3) {
+    transform: translate(-10%, 60%) rotate(-6deg);
+    color: var(--purple);
+}
+
+#insta:hover>.outer:nth-child(4) {
+    transform: translate(0%, 8%) rotate(-8deg);
+    color: var(--purple);
+}
+
+#insta:hover>.outer:nth-child(5) {
+    transform: translate(0%, -20%) rotate(5deg);
+    color: var(--purple);
+}
+
+#insta:hover>.outer:nth-child(6) {
+    transform: translate(0%, 20%) rotate(-3deg);
+    color: var(--purple);
+}
+
+@keyframes rotate {
+    0% {
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#arrow {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 8rem);
+}
+
 .row {
     display: flex;
     align-items: center;
@@ -236,7 +394,7 @@ li a:hover {
 }
 
 #browse>.browse-option:nth-child(3)>.browse-option-background {
-    background-image: url("https://images.unsplash.com/photo-1625805866449-3589fe3f71a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("images/runningnav.png");
 }
 
 #browse>.browse-option:nth-child(4)>.browse-option-background {
