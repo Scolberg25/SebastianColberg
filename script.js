@@ -8,5 +8,5 @@ function redirectHome() {
 
 function arrow() {
     document.getElementById('arrow').style.animation="rotate 0.3s linear";
-    window.location.replace(aboutme);
+    window.location.replace("aboutme");
 }
