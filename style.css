@@ -241,17 +241,17 @@ a {
 
 /* Insta */
 #insta:hover>.outer:nth-child(1) {
-    transform: translate(-70%, 50%) rotate(-8deg);
+    transform: translate(50%, -50%) rotate(8deg);
     color: var(--purple);
 }
 
 #insta:hover>.outer:nth-child(2) {
-    transform: translate(-40%, 20%) rotate(4deg);
+    transform: translate(-50%, 40%) rotate(-20deg);
     color: var(--purple);
 }
 
 #insta:hover>.outer:nth-child(3) {
-    transform: translate(-10%, 60%) rotate(-6deg);
+    transform: translate(-10%, 80%) rotate(10deg);
     color: var(--purple);
 }
 
@@ -266,7 +266,7 @@ a {
 }
 
 #insta:hover>.outer:nth-child(6) {
-    transform: translate(0%, 20%) rotate(-3deg);
+    transform: translate(0%, 20%) rotate(-7deg);
     color: var(--purple);
 }
 
