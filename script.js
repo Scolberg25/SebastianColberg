@@ -10,3 +10,30 @@ function arrow() {
     document.getElementById('arrow').style.animation="rotate 0.3s linear";
     window.location.replace("aboutme");
 }
+
+//Image Carousel
+var slidePosition = 1;
+SlideShow(slidePosition);
+
+function plusSlides(n) {
+    SlideShow(slidePosition += n);
+}
+
+function currentSlide(n) {
+    SlideShow(slidePosition = n);
+}
+
+var slidePosition = 0;
+SlideShow();
+
+function SlideShow() {
+    var i;
+    var slides = document.getElementsByClassName("Containers");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+}
+    slidePosition++;
+    if (slidePosition > slides.length) {slidePosition = 1}
+    slides[slidePosition-1].style.display = "block";
+  setTimeout(SlideShow, 10000); // Change image every 2 seconds
+} 

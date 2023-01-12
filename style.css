@@ -340,80 +340,39 @@ a {
     background: #48be89;
 }
 
-/* Nav Boxes */
-#browse {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 40%;
-    width: 20%;
-    margin: 2rem 1rem;
-    gap: 3%;
+/* Home Menu */
+* {
+    box-sizing: border-box;
 }
 
-#browse>.browse-option {
-    background-color: rgba(255 255 255 / 2%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0rem;
-    border: 1px solid rgba(255 255 255 / 10%);
-    outline: none;
-    border-radius: 0.5rem;
+body {
+    font-family: sans-serif;
+}
+
+.carousel {
+    background: #EEE;
+}
+
+.carousel div {
     position: relative;
-    cursor: pointer;
+    text-align: center;
 }
 
-#browse>.browse-option:hover>.browse-option-background,
-#browse>.browse-option:focus>.browse-option-background {
-    opacity: 0.8;
-}
-
-#browse>.browse-option>.browse-option-background {
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
-    transition: opacity 500ms ease;
+.carousel div>a {
     position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
 }
 
-#browse>.browse-option:nth-child(1)>.browse-option-background {
-    background-image: url("https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+.carousel img {
+    display: block;
+    height: 200px;
 }
 
-#browse>.browse-option:nth-child(2)>.browse-option-background {
-    background-image: url("images/cameranav.png");
-}
-
-#browse>.browse-option:nth-child(3)>.browse-option-background {
-    background-image: url("images/runningnav.png");
-}
-
-#browse>.browse-option:nth-child(4)>.browse-option-background {
-    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHZpZGVvJTIwZ2FtZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
-}
-
-#browse>.browse-option>i,
-#browse>.browse-option>.label {
-    color: white;
-    position: relative;
-    z-index: 2;
-}
-
-#browse>.browse-option>i {
-    font-size: 2rem;
-}
-
-#browse>.browse-option>.label {
-    font-size: 0.7rem;
-    font-weight: 500;
-    text-transform: uppercase;
+@media screen and (min-width: 768px) {
+    .carousel img {
+        height: 400px;
+    }
 }
