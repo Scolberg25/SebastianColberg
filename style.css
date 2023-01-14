@@ -27,7 +27,7 @@ body {
 
 body.fadein {
     opacity: 0;
-    transition: opacity 2s;
+    transition: opacity 3s;
 }
 
 a, a:hover, a:visited, a:active {
@@ -119,6 +119,37 @@ li a:hover {
 
 .project-boxes>a>p {
     font-size: 3vh;
+}
+
+@keyframes slideBoxLeft {
+    0% {
+        transform: translateX(-200%);
+        overflow: hidden;
+    }
+    100% {
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+}
+
+@keyframes slideBoxRight {
+    0% {
+        transform: translateX(200%);
+        overflow: hidden;
+    }
+
+    100% {
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+}
+
+#slideBoxLeft {
+    animation: 3s ease 0s 1 slideBoxLeft;
+}
+
+#slideBoxRight {
+    animation: 3s ease 0s 1 slideBoxRight;
 }
 
 /* Running */
