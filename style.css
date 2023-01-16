@@ -7,6 +7,8 @@
     --blue: rgb(41, 121, 255);
     --green: rgb(42, 252, 152);
     --purple: rgb(66, 33, 99);
+    --dark-color: #635bff;
+    --light-color: #80e9ff;
 }
 
 /* Main */
@@ -332,6 +334,22 @@ a {
     object-fit: contain;
 }
 
+@keyframes rotate {
+    0% {}
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#arrow {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: clamp(1.8rem, 6vw, 8rem);
+}
+
 /* 404 Page */
 .fourPage {
     text-align: center;
@@ -406,4 +424,67 @@ body {
     .carousel img {
         height: 400px;
     }
+}
+
+/* Photography */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+}
+
+.card p {
+    user-select: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+    overflow-y: hidden;
+}
+
+/* Medium screens */
+@media screen and (min-width: 600px) {
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+
+#photo {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#photo::-webkit-scrollbar {
+    display: none;
+}
+
+#instabutton a:hover {
+    background-color: inherit;
 }
