@@ -7,8 +7,12 @@ function redirectHome() {
 }
 
 function arrow() {
-    document.getElementById('arrow').style.animation="rotate 0.3s linear";
+    document.getElementById('arrow').style.animation="arrowDown 1.1s linear";
     window.location.replace("aboutme");
+}
+
+function changeThemeLight() {
+    document.getElementById("darkElement").classList.toggle('lightMode');
 }
 
 //Image Carousel

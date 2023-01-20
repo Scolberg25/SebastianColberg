@@ -1,14 +1,17 @@
 :root {
+    --text: #FFFFFF;
+    --background: #121212;
     --navBarColor: #282a35;
     --navBarHover: #000000;
     --navBarActive: #04aa6d;
-    --text: #FFFFFF;
-    --background: #121212;
     --blue: rgb(41, 121, 255);
     --green: rgb(42, 252, 152);
     --purple: rgb(66, 33, 99);
-    --dark-color: #635bff;
-    --light-color: #80e9ff;
+}
+
+html.light {
+    --text: #000000;
+    --background: #FFFFFF;
 }
 
 /* Main */
@@ -54,6 +57,10 @@ a, a:hover, a:visited, a:active {
 
 #blueLink {
     color: blue;
+}
+
+.icon:hover {
+    cursor: pointer;
 }
 
 /* navbar */
@@ -303,12 +310,13 @@ a {
     color: var(--purple);
 }
 
-@keyframes rotate {
-    0% {
-
+@keyframes arrowDown {
+    0% {}
+    20% {
+        transform: translateY(-100px);
     }
     100% {
-        transform: rotate(360deg);
+        transform: translateY(600px);
     }
 }
 
