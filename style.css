@@ -16,7 +16,7 @@
 
 .light {
     --bg: #f8f8f8;
-    --bg-nav: #7c5cff;
+    --bg-nav: #f8f8f8;
     --bg-dropdown: #f8f8f8;
     --text: #12181b;
     --border-color: var(--blue);
@@ -27,7 +27,7 @@
 
 .dark {
     --bg: #121212;
-    --bg-nav: #282a35;
+    --bg-nav: #121212;
     --bg-dropdown: #12181b;
     --text: #FFFFFF;
     --border-color: #7c5cff;
