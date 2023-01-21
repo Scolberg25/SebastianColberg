@@ -9,16 +9,27 @@
     <script src="/script.js"></script>
     <link rel="shortcut icon" href="/tab.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/tab.png">
+    <script defer src="/theme.js"></script>
 </head>
 
-<body class="fadein" onload="document.body.style.opacity='1'" id="photo">
+<body class="light">
     <header>
-        <nav>
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/mylife" class="active">My Life</a></li>
-                <li><a href="/about">About</a></li>
-                <li id="instabutton" float="right"><a href="https://www.instagram.com/sebastian_colberg_photography/?theme=dark" target="_blank" style="margin: 0px; padding: 0px;"><img src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png" style="width: 45px; margin: 5px;" /></a></li>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/home">Home</a></li>
+                <li class="nav-item"><a href="/mylife" class="active">My Life</a></li>
+                <li class="nav-item"><a href="/about">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Theme</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="Light" href="#">light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="Dark" href="#">dark</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>

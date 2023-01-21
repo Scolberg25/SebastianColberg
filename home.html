@@ -9,29 +9,43 @@
     <script src="script.js"></script>
     <link rel="shortcut icon" href="tab.png" type="image/x-icon" />
     <link rel="apple-touch-icon" href="tab.png">
+    <script defer src="theme.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
-<body class="fadein" onload="document.body.style.opacity='1'">
+<body class="light">
     <header>
-        <nav>
-            <ul>
-                <li><a href="home" class="active">Home</a></li>
-                <li><a href="mylife">My Life</a></li>
-                <li><a href="about">About</a></li>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="home" class="active">Home</a></li>
+                <li class="nav-item"><a href="mylife">My Life</a></li>
+                <li class="nav-item"><a href="about">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Theme</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="light" href="#">Light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="dark" href="#">Dark</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
     <br>
-        <h1 id="largeTitle">Sebastian Colberg</h1>
-        <br>
-        <div class="carousel" data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 5000, "pauseAutoPlayOnHover": false, "percentPosition": false, "pageDots": false }'>
-            <div><img src="images\chowtime.jpg" alt="About" /><a href="about">About</a></div>
-            <div><img src="images\theskysbleeding.jpg" alt="Photography" /><a href="life/photography">Photography</a></div>
-            <div><img src="images\halfwayover.jpg" alt="Nothing" /><a>Nothing Here</a></div>
-            <div><img src="images\offduty.jpg" alt="Nothing" /><a>Work in Progress</a></div>
-            <div><img src="images\outatsea.jpg" alt="Nothing" /><a>Still working on it</a></div>
-        </div>
+    <h1 id="largeTitle">Sebastian Colberg</h1>
+    <br>
+    <div class="carousel"
+        data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 5000, "pauseAutoPlayOnHover": false, "percentPosition": false, "pageDots": false }'>
+        <div><img src="images\chowtime.jpg" alt="About" /><a href="about">About</a></div>
+        <div><img src="images\theskysbleeding.jpg" alt="Photography" /><a href="life/photography">Photography</a></div>
+        <div><img src="images\halfwayover.jpg" alt="Nothing" /><a>Nothing Here</a></div>
+        <div><img src="images\offduty.jpg" alt="Nothing" /><a>Work in Progress</a></div>
+        <div><img src="images\outatsea.jpg" alt="Nothing" /><a>Still working on it</a></div>
+    </div>
 </body>
+
 </html>
