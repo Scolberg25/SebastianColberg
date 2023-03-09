@@ -12,13 +12,13 @@ if (theme) {
 }
 
 // Button Event Handlers
-darkButton.onclick = () => {
-    body.classList.replace('light', 'dark');
-    localStorage.setItem('theme', 'dark');
-};
-
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
 
     localStorage.setItem('theme', 'light');
+};
+
+darkButton.onclick = () => {
+    body.classList.replace('light', 'dark');
+    localStorage.setItem('theme', 'dark');
 };
