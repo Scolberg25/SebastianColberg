@@ -602,3 +602,27 @@ body {
 #instabutton a:hover {
     background-color: inherit;
 }
+
+/* Home Page */
+.homeTextDiv {
+    display: grid;
+    place-items: center;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.homeText {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+.homeText:hover {
+    background-color: white;
+    color: black;
+}

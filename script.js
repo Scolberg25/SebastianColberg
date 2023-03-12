@@ -36,29 +36,27 @@ window.onresize = function(event){
     }
 }
 
-//Image Carousel
-var slidePosition = 1;
-SlideShow(slidePosition);
+//Scrambling Text
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function plusSlides(n) {
-    SlideShow(slidePosition += n);
-}
+let interval = null;
 
-function currentSlide(n) {
-    SlideShow(slidePosition = n);
-}
-
-var slidePosition = 0;
-SlideShow();
-
-function SlideShow() {
-    var i;
-    var slides = document.getElementsByClassName("Containers");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-    slidePosition++;
-    if (slidePosition > slides.length) {slidePosition = 1}
-    slides[slidePosition-1].style.display = "block";
-  setTimeout(SlideShow, 10000); // Change image every 2 seconds
+document.querySelector(".homeText").onmouseover = event => {  
+    let iteration = 0;
+    clearInterval(interval);
+    interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+        .split("")
+        .map((letter, index) => {
+            if(index < iteration) {
+            return event.target.dataset.value[index];
+            }
+        return letters[Math.floor(Math.random() * 26)]
+        })
+        .join("");
+    if(iteration >= event.target.dataset.value.length){ 
+        clearInterval(interval);
+    }
+    iteration += 1 / 3;
+    }, 30);
 }
