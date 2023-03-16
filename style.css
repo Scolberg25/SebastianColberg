@@ -619,12 +619,12 @@ body {
 .homeText {
     font-family: 'Space Mono', monospace;
     font-size: clamp(2.5rem, 8vw, 8rem);
-    color: white;
+    color: var(--text);
     padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 .homeText:hover {
-    background-color: white;
-    color: black;
+    background-color: var(--text);
+    color: var(--bg);
 }
