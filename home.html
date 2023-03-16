@@ -43,14 +43,31 @@
         <h1 class="homeText" data-value="SEBASTIAN COLBERG">SEBASTIAN COLBERG</h1>
     </div>
     <br>
-    <div class="carousel"
-        data-flickity='{ "imagesLoaded": true, "wrapAround": true, "autoPlay": 5000, "pauseAutoPlayOnHover": false, "percentPosition": false, "pageDots": false }'>
-        <div><img src="images\chowtime.jpg" alt="About" /><a href="about">About</a></div>
-        <div><img src="images\theskysbleeding.jpg" alt="Photography" /><a href="life/photography">Photography</a></div>
-        <div><img src="images\halfwayover.jpg" alt="Nothing" /><a>Nothing Here</a></div>
-        <div><img src="images\offduty.jpg" alt="Nothing" /><a>Work in Progress</a></div>
-        <div><img src="images\outatsea.jpg" alt="Nothing" /><a>Still working on it</a></div>
+    <div class="carousel">
+        <div class="static-banner static-banner1"><h1 id="largeTitle" style="font-size: clamp(32px, 4vw, 48px);">My Search for the Perfect Taco</h1></div>
+        <img src="images\chowtime.jpg" alt="About" class="carousel-cell" />
+        <img src="images\theskysbleeding.jpg" alt="Photography" class="carousel-cell" />
+        <img src="images\halfwayover.jpg" alt="Nothing" class="carousel-cell" />
+        <img src="images\offduty.jpg" alt="Nothing" class="carousel-cell" />
+        <img src="images\outatsea.jpg" alt="Nothing" class="carousel-cell" />
     </div>
 </body>
-
 </html>
+
+<script>
+    var flkty = new Flickity('.carousel', {
+        imagesLoaded: true,
+        wrapAround: true,
+        autoPlay: 5000,
+        pauseAutoPlayOnHover: false,
+        percentPosition: false,
+        pageDots: false,
+        prevNextButtons: true,
+        draggable: true,
+        cellSelector: ".carousel-cell"
+    });
+    //var caption = document.querySelector('.static-banner1');
+    flkty.on('select', function () {
+        caption.textContent = flkty.selectedElement.alt;
+    });
+</script>

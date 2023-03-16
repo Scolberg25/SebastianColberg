@@ -470,10 +470,8 @@ a {
 
 /* Text Styling */
 #largeTitle {
-    font-size: 60px;
+    font-size: 1.5rem;
     text-align: center;
-    margin-left: 75px;
-    margin-right: 75px;
 }
 
 #bodyText {
@@ -512,21 +510,8 @@ body {
 }
 
 .carousel {
-    background: #EEE;
-}
-
-.carousel div {
+    background: #FAFAFA;
     position: relative;
-    text-align: center;
-}
-
-.carousel div>a {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
-    color: white;
 }
 
 .carousel img {
@@ -534,6 +519,23 @@ body {
     height: 200px;
 }
 
+.static-banner {
+    position: absolute;
+    background: hsla(0, 0%, 0%, 0.3);
+    z-index: 1;
+    padding: 2px 20px;
+    font-size: 26px;
+    color: white;
+    pointer-events: none;
+}
+
+.static-banner1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 33%;
+}
 @media screen and (min-width: 768px) {
     .carousel img {
         height: 400px;
@@ -616,7 +618,7 @@ body {
 
 .homeText {
     font-family: 'Space Mono', monospace;
-    font-size: clamp(3rem, 10vw, 10rem);
+    font-size: clamp(2.5rem, 8vw, 8rem);
     color: white;
     padding: 0rem clamp(1rem, 2vw, 3rem);
     border-radius: clamp(0.4rem, 0.75vw, 1rem);
