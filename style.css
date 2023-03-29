@@ -52,8 +52,8 @@ html {
 
 body {
     background-color: var(--bg);
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     color: var(--text);
     font-family: Verdana;
     padding: 0;
@@ -536,6 +536,7 @@ body {
     right: 0;
     top: 33%;
 }
+
 @media screen and (min-width: 768px) {
     .carousel img {
         height: 400px;
@@ -551,7 +552,7 @@ body {
     font-size: 3rem;
     color: #fff;
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-    height: 100%;
+    height: 95%;
     width: 100%;
     border-radius: 4px;
     transition: all 500ms;
