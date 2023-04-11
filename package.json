@@ -1,8 +1,15 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
+  "name": "scolberg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
   },
+  "keywords": [],
+  "author": "Sebastian Colberg",
+  "license": "ISC",
   "dependencies": {
-    "mediaelement": "^5.1.0"
+    "express": "^4.17.1"
   }
 }

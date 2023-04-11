@@ -8,11 +8,11 @@
     <meta name="keywords" content="Sebastian, Colberg, Sebastian Colberg, Blog, Scolberg">
     <meta name="author" content="Sebastian Colberg">
     <title>Sebastian Colberg</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="tab.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="tab.png">
-    <script defer src="theme.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+    <link rel="shortcut icon" href="/images/tab.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/tab.png">
+    <script src="/js/theme.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
@@ -44,21 +44,3 @@
     </div>
 </body>
 </html>
-
-<script>
-    var flkty = new Flickity('.carousel', {
-        imagesLoaded: true,
-        wrapAround: true,
-        autoPlay: 5000,
-        pauseAutoPlayOnHover: false,
-        percentPosition: false,
-        pageDots: false,
-        prevNextButtons: true,
-        draggable: true,
-        cellSelector: ".carousel-cell"
-    });
-    //var caption = document.querySelector('.static-banner1');
-    flkty.on('select', function () {
-        caption.textContent = flkty.selectedElement.alt;
-    });
-</script>
