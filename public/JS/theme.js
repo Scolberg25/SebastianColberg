@@ -8,6 +8,7 @@ const body = document.body;
 const theme = localStorage.getItem('theme');
 
 if (theme) {
+    body.removeAttribute('class')
     body.classList.add(theme);
 }
 

@@ -11,10 +11,6 @@ function arrow() {
     window.location.replace("aboutme");
 }
 
-function changeThemeLight() {
-    document.getElementById("darkElement").classList.toggle('lightMode');
-}
-
 //Auto refresh on window resize
 var w = window,
 d = document,
