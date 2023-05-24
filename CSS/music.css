@@ -1,0 +1,205 @@
+.musicCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.musicCard p {
+    user-select: none !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.musicPhoto-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 260px;
+    overflow-y: hidden;
+}
+
+.musicPhoto-top3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+}
+
+.musicCard-top3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 18vw;
+    width: 18vw;
+    border-radius: 4px;
+    transition: all 500ms;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.musicCircleWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.musicCircle {
+    border: 2px white solid;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+/* navbar */
+.musicNavbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
+}
+
+.musicNavbar-nav {
+    float: left;
+    width: 20em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    border: 5px solid #e4e7ec;
+    border-radius: 10em;
+    box-shadow: 0px 2px 5px #e4e7ec;
+}
+
+.musicNavbarLastfm {
+    border-radius: 50px;
+    float: right;
+    background-size: cover;
+    background-image: url(https://www.last.fm/static/images/lastfm_avatar_applemusic.b06eb8ad89be.png);
+    width: 5em;
+    height: 5em;
+    margin-right: 30px;
+}
+
+li span {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.musicReviewBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Image Rating"
+        ". . . . . ."
+        ". . . . . .";
+    margin: 30px;
+}
+
+.musicRating {
+    grid-area: Rating;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+.musicImage {
+    grid-area: Image;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+.musicImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.song-review {
+    border: 2px solid white;
+    height: 100%;
+    margin: 0;
+}
+
+/*Carousel*/
+* {
+    box-sizing: border-box;
+}
+
+.carousel {
+    background: #FAFAFA;
+    position: relative;
+}
+
+.carousel img {
+    display: block;
+    height: 200px;
+}
+
+.flickity-page-dots {
+    bottom: -50px !important;
+}
+
+.caption {
+    background: var(--bg);
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+}
+
+.static-banner {
+    position: absolute;
+    background: hsla(0, 0%, 0%, 0.3);
+    z-index: 1;
+    padding: 2px 20px;
+    font-size: 26px;
+    color: white;
+    pointer-events: none;
+}
+
+.static-banner1 {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 33%;
+}

@@ -1,0 +1,218 @@
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+* {
+  box-sizing: border-box;
+}
+
+.parallax {
+  background: #222;
+  padding: 0;
+  margin: 0;
+  font-family: "Sintony", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+header {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  letter-spacing: 4px;
+  overflow: hidden;
+  clip: rect(0, auto, auto, 0);
+}
+.section .fixed {
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.section .white {
+  color: #fff;
+}
+
+.section:nth-child(1) {
+  background-color: var(--bg);
+  color: white;
+  top: 0;
+  z-index: 1;
+}
+
+.section:nth-child(1) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(2) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: #B4436C;
+  color: #fff;
+  top: 100vh;
+  z-index: 2;
+}
+.section:nth-child(2) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(3) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(240, 90%, 40%);
+  color: #fff;
+  top: 200vh;
+  z-index: 3;
+}
+.section:nth-child(3) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(4) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(80, 90%, 40%);
+  color: #fff;
+  top: 300vh;
+  z-index: 4;
+}
+.section:nth-child(4) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(5) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(280, 90%, 40%);
+  color: #fff;
+  top: 400vh;
+  z-index: 5;
+}
+.section:nth-child(5) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(6) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(120, 90%, 40%);
+  color: #fff;
+  top: 500vh;
+  z-index: 6;
+}
+.section:nth-child(6) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(7) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(320, 90%, 40%);
+  color: #fff;
+  top: 600vh;
+  z-index: 7;
+}
+.section:nth-child(7) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(8) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(160, 90%, 40%);
+  color: #fff;
+  top: 700vh;
+  z-index: 8;
+}
+.section:nth-child(8) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(9) {
+  box-shadow: inset 0 1px 80px rgba(0, 0, 0, 0.14);
+  background-color: hsl(0, 90%, 40%);
+  color: #fff;
+  top: 800vh;
+  z-index: 9;
+}
+.section:nth-child(9) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+.section:nth-child(10) {
+  background-color: #000;
+  color: #fff;
+  top: 900vh;
+  z-index: 10;
+}
+.section:nth-child(10) .fixed {
+  transform: translate(-50%, -50%);
+}
+
+#skillsImage {
+  width: 6rem;
+  padding: 0.5rem;
+  object-fit: contain;
+  position: absolute;
+}
+
+#skillsImage:nth-child(1) {
+  top: 13vh;
+  left: 5vw;
+  transform: rotate(4deg);
+}
+
+#skillsImage:nth-child(2) {
+  top: 85vh;
+  left: 13vw;
+  transform: rotate(10deg);
+}
+
+#skillsImage:nth-child(3) {
+  top: 30vh;
+  left: 20vw;
+  transform: rotate(-6deg);
+}
+
+#skillsImage:nth-child(4) {
+  bottom: 30vh;
+  left: 30vw;
+  transform: rotate(8deg);
+}
+
+#skillsImage:nth-child(5) {
+  top: 20vh;
+  left: 40vw;
+  transform: rotate(-5deg);
+}
+
+#skillsImage:nth-child(6) {
+  top: 80vh;
+  left: 45vw;
+  transform: rotate(-3deg);
+}
+
+#skillsImage:nth-child(7) {
+  top: 70vh;
+  left: 70vw;
+  transform: rotate(-5deg);
+}
+
+#skillsImage:nth-child(8) {
+  top: 15vh;
+  left: 60vw;
+  transform: rotate(5deg);
+}
+
+#skillsImage:nth-child(9) {
+  top: 30vh;
+  left: 80vw;
+  transform: rotate(-5deg);
+}
+
+#skillsImage:nth-child(10) {
+  top: 80vh;
+  left: 90vw;
+  transform: rotate(-5deg);
+}
+
+/*# sourceMappingURL=aboutmeparallax.css.map */

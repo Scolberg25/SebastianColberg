@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sebastian Colberg">
+    <meta name="keywords" content="Sebastian, Colberg, Sebastian Colberg, Blog, Scolberg">
+    <meta name="author" content="Sebastian Colberg">
+    <title>Sebastian Colberg</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/music.css">
+    <script src="/JS/script.js" defer></script>
+    <link rel="shortcut icon" href="/images/tab.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/tab.png">
+    <script src="/JS/theme.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<body class="dark" style="overflow-x: hidden;">
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/home">Home</a></li>
+                <li class="nav-item"><a href="/mylife" class="active">My Life</a></li>
+                <li class="nav-item"><a href="/about">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Theme</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="light" href="#">Light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="dark" href="#">Dark</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="musicNavbar">
+        <ul class="musicNavbar-nav">
+            <li class="nav-item"><span onclick="show('Page1');">Favorites</span></li>
+            <li class="nav-item"><span onclick="show('Page2');">New</span></li>
+            <li class="nav-item"><span onclick="show('Page3');">Downloads</span></li>
+        </ul>
+        <a class="musicNavbarLastfm" href="https://www.last.fm/user/imjustacowbtw" target="_blank"></a>
+    </div>
+    
+    <div id="Page1" class="page">
+        <h1 style="font-size: 80px; text-align: center;">My Favorite Projects</h1>
+        <br>
+        <div class="musicPhoto-top3">
+            <div class="musicCard-top3"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2Ff3e963acf4c8ddc4b878f687d5a11537.1000x1000x1.jpg');">
+            </div>
+            <div class="musicCard-top3"
+                style="background-image: url('https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2F9d35a5dff10090e6c1d5e077932cea99.1000x1000x1.jpg');">
+            </div>
+            <div class="musicCard-top3"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F6f18a1e8037fe78f75398230065ddc68.1000x1000x1.jpg')">
+            </div>
+        </div>
+        <div class="musicPhoto-grid">
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F463f6a22b5094dbd2aa3a8f02fa68c40.900x900x1.png')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2Ff15065ef66cd717c267d3f2e37313bc1.1000x1000x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F69b6ac39a8708128d32079d23bb9b06f.320x320x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F7ca7587cc9411d4c2926a3b5c3f8539a.1000x1000x1.png')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://images.genius.com/60712a7b6cbcc792502d877fb9a170c5.1000x1000x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2Ff3f77222e1b615e0a10354ea6282ff22.1000x1000x1.png')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2Fb9d6cf24ceb76fa5d8ebf02569e16e2f.1000x1000x1.png')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F97300f5421ff3c645217d0d1dfef2dd6.1000x1000x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F843b2b84471f4b69d44f74db192ad257.1000x1000x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F04b8cdf90baa93da2cfa5aebe2b05b3c.640x640x1.jpg')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F3909b41f2c27e688e4caec3637cdba36.1000x1000x1.png')">
+            </div>
+            <div class="musicCard"
+                style="background-image: url('https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F7aa3bebecdfc0a7f9140c479bcb52182.1000x1000x1.png')">
+            </div>
+        </div>
+    </div>
+    <div id="Page2" class="page" style="display:none; box-sizing: border-box;">
+        <!--<div class="carousel">
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2Ff3e963acf4c8ddc4b878f687d5a11537.1000x1000x1.jpg" alt="Goodbye & Good Riddance by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2F9d35a5dff10090e6c1d5e077932cea99.1000x1000x1.jpg" alt="After Hours by The Weeknd" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F6f18a1e8037fe78f75398230065ddc68.1000x1000x1.jpg" alt="Death Race for Love by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F463f6a22b5094dbd2aa3a8f02fa68c40.900x900x1.png" alt="Legendaddy by Daddy Yankee" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2Ff15065ef66cd717c267d3f2e37313bc1.1000x1000x1.jpg" alt="Dawn FM by The Weeknd" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F69b6ac39a8708128d32079d23bb9b06f.320x320x1.jpg" alt="Legends Never Die by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F7ca7587cc9411d4c2926a3b5c3f8539a.1000x1000x1.png" alt="Beauty Behind the Madness by The Weeknd" class="carousel-cell" />
+        </div>-->
+        <div class="carousel">
+            <img src="images/1.jpg" alt="Homemade Birria Tacos" class="carousel-cell" />
+            <img src="images/2.jpg" alt="Tacos from Tenoch" class="carousel-cell" />
+            <img src="images/3.jpg" alt="Chipotle" class="carousel-cell" />
+            <img src="images/4.jpg" alt="Burrito from Tenoch" class="carousel-cell" />
+            <img src="images/5.jpg" alt="Valentine's Day at Condesa" class="carousel-cell" />
+            <img src="images/6.jpg" alt="El Jefe's Taqueria" class="carousel-cell" />
+            <img src="images/7.jpg" alt="Al Pastor Tacos from Tin and Taco" class="carousel-cell" />
+        </div>
+        <p class="caption" style="width: 100%; text-align: center; margin-top: 50px;">&nbsp;</p>
+    </div>
+    <div id="Page3" class="page" style="display:none">
+        <form style="position: absolute; bottom: 50%; width: 100%; display: flex; justify-content: center;">
+            <input oninput="passwordEntered(this.value)" type="password" name="password" placeholder="Enter Password" autocomplete="off" id="password" style="text-align: center; background-color: transparent; color: white; border: white 1px solid; height: 40px; border-radius: 14px;">
+        </form>
+    </div>
+
+    <script>
+        // show the given page, hide the rest
+        function show(elementID) {
+            // find the requested page and alert if it's not found
+            const ele = document.getElementById(elementID);
+            if (!ele) {
+                alert("Error");
+                return;
+            }
+
+            // get all pages, loop through them and hide them
+            const pages = document.getElementsByClassName('page');
+            for (let i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            // then show the requested page
+            ele.style.display = 'block';
+        }
+        
+        function changeStyle(elementID) {
+            const ele = document.getElementById(elementID);
+
+            const pages = document.getElementsByClassName('musicNav');
+            for (let i = 0; i < pages.length; i++) {
+                pages[i].style.display = 'none';
+            }
+
+            const newEle = document.getElementById(elementID + 'Nav')
+            console.log(newEle)
+        }
+
+        function passwordEntered(value) {
+            if (value == "sebsentme") {
+                console.log("Success")
+                window.location.href = "https://mega.nz/folder/CuYAHbQL#R6Sp1MOXIt09S_HBrmerBA";
+            }
+        }
+    </script>
+</body>
+</html>
+
+<script>
+    var flkty = new Flickity('.carousel', {
+        imagesLoaded: true,
+        wrapAround: true,
+        autoPlay: 2000,
+        pauseAutoPlayOnHover: false,
+        percentPosition: false,
+        pageDots: true,
+        prevNextButtons: true,
+        draggable: true,
+    });
+    var caption = document.querySelector('.caption');
+    flkty.on('select', function () {
+        caption.textContent = flkty.selectedElement.alt;
+    });
+</script>
