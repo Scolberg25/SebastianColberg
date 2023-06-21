@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sebastian Colberg">
+    <meta name="keywords" content="Sebastian, Colberg, Sebastian Colberg, Blog, Scolberg">
+    <meta name="author" content="Sebastian Colberg">
+    <title>Sebastian Colberg</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/JS/script.js" defer></script>
+    <link rel="shortcut icon" href="/images/tab.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/tab.png">
+    <script src="/JS/theme.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</head>
+
+<style>
+    /* navbar */
+.musicNavbar {
+    height: 70px;
+    width: 100%;
+    background: var(--bg-nav);
+    color: var(--text);
+}
+
+.musicNavbar-nav {
+    float: left;
+    width: 20em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    border: 5px solid #e4e7ec;
+    border-radius: 10em;
+    box-shadow: 0px 2px 5px #e4e7ec;
+}
+
+.musicNavbarLastfm {
+    border-radius: 50px;
+    float: right;
+    background-size: cover;
+    background-image: url(https://www.last.fm/static/images/lastfm_avatar_applemusic.b06eb8ad89be.png);
+    width: 5em;
+    height: 5em;
+    margin-right: 30px;
+}
+
+li span {
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<body class="dark" style="overflow-x: hidden;">
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/home">Home</a></li>
+                <li class="nav-item"><a href="/mylife" class="active">My Life</a></li>
+                <li class="nav-item"><a href="/about">About</a></li>
+                <li class="nav-item has-dropdown">
+                    <a href="#">Theme</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a id="light" href="#">Light</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a id="dark" href="#">Dark</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="musicNavbar">
+        <ul class="musicNavbar-nav">
+            <a href="../music">
+                <li class="nav-item"><span>Favorites</span></li>
+            </a>
+            <a href="./new">
+                <li class="nav-item"><span>New</span></li>
+            </a>
+            <a href="#">
+                <li class="nav-item"><span>Downloads</span></li>
+            </a>
+        </ul>
+        <a class="musicNavbarLastfm" href="https://www.last.fm/user/imjustacowbtw" target="_blank"></a>
+    </div>
+    <div id="Page2" class="page" style="box-sizing: border-box;">
+        <h1 style="font-size: 80px; text-align: center;">New Reviews</h1>
+        <br>
+        <div class="carousel">
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2Ff3e963acf4c8ddc4b878f687d5a11537.1000x1000x1.jpg" alt="Goodbye & Good Riddance by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2F9d35a5dff10090e6c1d5e077932cea99.1000x1000x1.jpg" alt="After Hours by The Weeknd" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F6f18a1e8037fe78f75398230065ddc68.1000x1000x1.jpg" alt="Death Race for Love by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F463f6a22b5094dbd2aa3a8f02fa68c40.900x900x1.png" alt="Legendaddy by Daddy Yankee" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2Ff15065ef66cd717c267d3f2e37313bc1.1000x1000x1.jpg" alt="Dawn FM by The Weeknd" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F69b6ac39a8708128d32079d23bb9b06f.320x320x1.jpg" alt="Legends Never Die by Juice WRLD" class="carousel-cell" />
+            <img src="https://t2.genius.com/unsafe/869x0/https%3A%2F%2Fimages.genius.com%2F7ca7587cc9411d4c2926a3b5c3f8539a.1000x1000x1.png" alt="Beauty Behind the Madness by The Weeknd" class="carousel-cell" />
+        </div>
+        <p class="caption" style="width: 100%; text-align: center; margin-top: 50px;">&nbsp;</p>
+    </div>
+</body>
+</html>
+
+<script>
+    var flkty = new Flickity('.carousel', {
+        imagesLoaded: true,
+        wrapAround: true,
+        autoPlay: 2000,
+        pauseAutoPlayOnHover: false,
+        percentPosition: false,
+        pageDots: true,
+        prevNextButtons: true,
+        draggable: true,
+    });
+    var caption = document.querySelector('.caption');
+    flkty.on('select', function () {
+        caption.textContent = flkty.selectedElement.alt;
+    });
+</script>
